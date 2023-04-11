@@ -1,0 +1,27 @@
+
+<div class="container center" style=" height: 90vh; width: 75vw; display: flex; position: absolute; align-items: center;justify-content: center;">
+  <div style="text-align:center">
+    <p style="color: green"><%= notice %></p>
+    <h1>User Profile</h1>
+
+    <div>
+      <%= render @user %>
+    </div>
+    <% if current_user.admin? %>
+      
+    <div>
+      <%= link_to "Edit this user", edit_user_path(@user)  %> |
+      <%= link_to "Back to users", users_path %>
+      <%= button_to "Destroy this user", @user, method: :delete %>
+    </div>
+    <% end %>
+
+    <div>
+      <%= button_to "Logout", destroy_user_session_path, :method => :delete %>
+    </div>
+
+    <div>
+      <%= render 'metrics/user_role' %>
+    </div>
+  </div>
+</div>

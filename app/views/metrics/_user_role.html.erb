@@ -1,0 +1,4 @@
+<div class='chart'>
+  <h3>User Types</h3>
+  <%= pie_chart User.group(:role).count %>
+</div>

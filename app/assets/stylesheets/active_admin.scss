@@ -1,0 +1,278 @@
+// Sass variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+// Active Admin's got SASS!
+@import 'activeadmin_addons/all';
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+//----------------------------------------------
+//ARCTIC ADMIN
+// @import "arctic_admin/base";
+
+// // $primary-color: #2dbb43;
+// @import "~arctic_admin/src/scss/main";
+
+//----------------------------------------------
+
+//---------------------------------------------
+// ACTIVE ADMIN THEME 
+
+$skinMainFirstColor: #3b413f!default;
+$skinMainSecondColor: #636155!default;
+$skinBorderWindowColor: #6662507a!default;
+
+@import 'wigu/active_admin_theme';
+
+
+.toggle-bool-switches-container .toggle-bool-switch{
+    background: #6662507a;
+    background-image: linear-gradient(180deg, #6662507a, #6662507a);
+}
+
+.toggle-bool-switches-container .toggle-bool-switch.on{
+    background: #6662507a;
+    background-image: linear-gradient(180deg, #636155, #636155);
+}
+
+#index_table_users, #index_table_assets, #index_table_skills{
+    -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+}
+
+a.member_link{
+    border: 1px solid #000000;
+    background: #ffffff none repeat scroll 0 0;
+    color:#636155;
+    outline: none;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 15%;
+}
+a.member_link:hover{
+    background: #636155 none repeat scroll 0 0;
+    color:#ffffff;
+}
+.toggle-bool-switches-container{
+    text-align: left;
+}
+
+.table_tools .dropdown_menu{
+    -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+
+    border: 0.5px solid #636155;
+    border-radius: 5px;
+}
+
+.section, .panel{
+    -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+}
+
+#wrapper #title_bar #titlebar_right .action_item a{
+    background: #c2bba47a;
+    color: #ffffff
+}
+.download_links > a{
+    border: 1px solid #000000;
+    background: #636155 none repeat scroll 0 0;
+    color:#ffffff;
+    outline: none;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 15%;
+}
+.download_links > a:hover{
+    background: #c2bba47a none repeat scroll 0 0;
+    color:#000000;
+}
+
+body {
+    // font-family: "Raleway", sans-serif;
+    font-family: 'Roboto Slab', serif;
+  }
+// .panel_contents{
+//     -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+//     -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+//     box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+// }
+
+
+
+
+
+
+// ---------------------------------------------
+
+// Overriding any non-variable Sass must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+// body.logged_out #content_wrapper #active_admin_content {
+    //     // box-shadow: 0 1px 2px #000000;
+    //     background: #f6ebef;
+    //     padding: 13px 30px;
+    //     border-radius: 15px;
+    //     -moz-border-radius: 150px;
+    //     -webkit-border-radius: 15px;
+    //     border: 0px solid #000000;
+    
+    //     -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    //     -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    //     box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+    // }
+
+// body.logged_out h2{
+//     background: #A16375;
+//     border-radius: 15px 15px 0px 0px;
+//     -moz-border-radius: 15px 15px 0px 0px;
+//     -webkit-border-radius: 15px 15px 0px 0px;
+//     border: 0px solid #000000;
+// }
+
+// form fieldset > ol > li label {
+//     color: #000000;
+// }
+
+// a, a:link, a:visited{
+//     color: #000000;
+// }
+
+// form input[type=submit], form input[type=button], form button{
+//     background: #A16375;
+// }
+
+// .breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:active{
+//     color: #ffffff;
+// }
+
+// #header{
+//     background: #A16375;
+//     background-color: #A16375;
+//     background-image: linear-gradient(180deg, #A16375, #A16375);
+//     border-bottom: 1px solid #A16375;
+//     text-shadow: #000 0 1px 0;
+//     display: table;
+//     height: 20px;
+//     width: 100%;
+//     overflow: visible;
+//     position: inherit;
+//     padding: 5px 0;
+//     z-index: 900;
+// }
+
+// #header ul.tabs > li a{
+//     color: #ffffff;
+// }
+// #title_bar h2{
+//     color: #ffffff;
+// }
+// #title_bar{
+//     background: #7F6A70;
+//     // background: linear-gradient(0deg, rgba(176,206,226,1) 0%, rgba(176,206,226,1) 100%);
+// }
+// .section, .panel{
+//     background: #f6ebef;
+//     border-radius: 15px 15px 15px 15px;
+//     -moz-border-radius: 15px 15px 15px 15px;
+//     -webkit-border-radius: 15px 15px 15px 15px;
+//     border: 0px solid #000000;
+
+//     -webkit-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+//     -moz-box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+//     box-shadow: 10px 10px 21px -9px rgba(127,106,112,0.6);
+
+// }
+// .section > h3, .panel > h3{
+//     color: #ffffff;
+//     background: #A16375;
+//     border-radius: 15px 15px 0px 0px;
+//     -moz-border-radius: 15px 15px 0px 0px;
+//     -webkit-border-radius: 15px 15px 0px 0px;
+//     border: 0px solid #000000;
+// }
+// html,#wrapper{
+//     background-color: #f2f3ee;
+// }
+
+// // table styling
+// table.index_table th{
+//     background: #A16375;
+// }
+// table.index_table th a, table.index_table th a:link, table.index_table th a:visited{
+//     color: #ffffff;
+//     // background-color: #A16375;
+// }
+// table.index_table th.sorted-asc, table.index_table th.sorted-desc{
+//     background: #A16375;
+// }
+// table.index_table{
+//     border: 1px solid #A16375;
+// }
+// #title_bar .action_items span.action_item > a, #title_bar .action_items span.action_item > .dropdown_menu > a{
+//     background: #A16375;
+//     color: #ffffff;
+// }
+// #title_bar .action_items span.action_item > a:hover{
+//     background: #f6ebef;
+//     color: #A16375;
+// }
+// #header ul.tabs > li.current > a{
+//     background: #EEEAEB;
+//     color: #000000;
+// }
+
+// //pagination 
+// .pagination_information{
+//     color: #000000;
+// }
+
+// #header ul.tabs > li ul{
+//     background: #f6ebef;
+// }
+// #header #utility_nav{
+//     color: #f6ebef;
+// }
+// #title_bar .action_items span.action_item > a:not(.disabled):active, #title_bar .action_items span.action_item > .dropdown_menu > a:not(.disabled):active{
+//     // box-shadow: 0 1px 2px rgb(0 0 0 / 22%) inset, 0 1px 0 0px #eee;
+//     border-color: #f6ebef;
+//     border-top-color: #f6ebef;
+//     border-right-color: #f6ebef;
+//     border-bottom-color: #f6ebef;
+//     border-left-color: #f6ebef;
+//     background-color: #f6ebef;
+//     background-image: linear-gradient(180deg, #f6ebef, #f6ebef);
+// }
+// #header ul.tabs > li a:hover{
+//     color: #000000;
+//     background: #EEEAEB;
+// }
+// #header #utility_nav a{
+//     color: #000000;
+//     background: #f6ebef;
+// }
+// #header #utility_nav a:hover{
+//     color: #000000;
+//     background: #f6ebef;
+// }
+// #header ul.tabs > li.has_nested > a{
+//     background: #f6ebef;
+//     color: #000000;
+// }
+// body{
+//     background: #f2f3ee;
+// }

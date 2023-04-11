@@ -1,0 +1,26 @@
+<div id="<%= dom_id @user %>">
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    <%= @user.role %>
+  </p>
+
+  <p>
+    <strong>Assets:</strong><br>
+    
+      <% @user.assets.each do |asset| %>
+        - <%= asset.name %> <br>
+      <% end %>
+  
+  </p>
+
+</div>
