@@ -22,19 +22,27 @@ ActiveAdmin.register_page "Dashboard" do
     
     columns do
       column do
-        panel "Recent Users" do
-          ol do
-            User.last(5).reverse.map do |user|
-              li link_to(user.email, admin_user_path(user))
-            end
-          end
-        end
+        # panel "Recent Users" do
+        #   ol do
+        #     User.last(5).reverse.map do |user|
+        #       li link_to(user.email, admin_user_path(user))
+        #     end
+        #   end
+        # end
       end
 
       column do
         panel 'Users ratio by Role' do
           pie_chart User.group(:role).count, colors: ["#636155", "#6662507a"]
           # render partial: "metrics/user_role"
+        end
+      end
+    end
+
+    columns do
+      column do
+        panel "Greetings!" do
+          para "Footer of admin panel."
         end
       end
     end
